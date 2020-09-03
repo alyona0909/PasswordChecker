@@ -4,7 +4,7 @@ import sys
 import re
 
 # function to send data to api
-# returns a tail of password which starts with first_chars
+# returns a tails of password which starts with first_chars
 def request_api_data(first_chars):
 	url = 'https://api.pwnedpasswords.com/range/' + first_chars
 	res = requests.get(url)
